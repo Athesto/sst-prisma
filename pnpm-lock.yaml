@@ -92,7 +92,7 @@ importers:
       '@chax-at/transactional-prisma-testing': ^0.5.0
       '@faker-js/faker': ^7.5.0
       '@middy/core': ^2.5.7
-      '@prisma/client': 4.2.1
+      '@prisma/client': 3.11.0-integration-fix-empty-path.1
       '@prisma/generator-helper': '*'
       '@prisma/internals': 4.2.1
       '@prisma/migrate': 4.2.1
@@ -125,7 +125,7 @@ importers:
       '@aws-sdk/client-secrets-manager': 3.145.0
       '@aws-sdk/signature-v4-crt': 3.272.0
       '@middy/core': 2.5.7
-      '@prisma/client': 4.2.1_prisma@4.2.1
+      '@prisma/client': 3.11.0-integration-fix-empty-path.1_prisma@4.2.1
       '@prisma/internals': 4.2.1
       '@prisma/migrate': 4.2.1_tifv6rof7ooao4ihfv4dfcuzcm
       '@sentry/serverless': 7.37.2
@@ -138,7 +138,7 @@ importers:
       memoizee: 0.4.15
     devDependencies:
       '@babel/core': 7.20.12
-      '@chax-at/transactional-prisma-testing': 0.5.0_@prisma+client@4.2.1
+      '@chax-at/transactional-prisma-testing': 0.5.0_bgf6mszzpafve3zxpm5q5t4oce
       '@faker-js/faker': 7.6.0
       '@prisma/generator-helper': 4.10.1
       '@types/aws-lambda': 8.10.110
@@ -4447,12 +4447,12 @@ packages:
     resolution: {integrity: sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==}
     dev: true
 
-  /@chax-at/transactional-prisma-testing/0.5.0_@prisma+client@4.2.1:
+  /@chax-at/transactional-prisma-testing/0.5.0_bgf6mszzpafve3zxpm5q5t4oce:
     resolution: {integrity: sha512-pOhl8ZjbgLIjBe/zRoiArsV9Rzi5mhieESbRLXflHzParaeRHTcEhCcPyk6C/5IB7Hw6ye+V1wZuQzHh4jYyWQ==}
     peerDependencies:
       '@prisma/client': ^2.29.0 || 3 || 4
     dependencies:
-      '@prisma/client': 4.2.1_prisma@4.2.1
+      '@prisma/client': 3.11.0-integration-fix-empty-path.1_prisma@4.2.1
     dev: true
 
   /@cnakazawa/watch/1.0.4:
@@ -6520,9 +6520,9 @@ packages:
     resolution: {integrity: sha512-50/17A98tWUfQ176raKiOGXuYpLyyVMkxxG6oylzL3BPOlA6ADGdK7EYunSa4I064xerltq9TGXs8HmOk5E+vw==}
     dev: false
 
-  /@prisma/client/4.2.1_prisma@4.2.1:
-    resolution: {integrity: sha512-PZBkY60+k5oix+e6IUfl3ub8TbRLNsPLdfWrdy2eh80WcHTaT+/UfvXf/B7gXedH7FRtbPFHZXk1hZenJiJZFQ==}
-    engines: {node: '>=14.17'}
+  /@prisma/client/3.11.0-integration-fix-empty-path.1_prisma@4.2.1:
+    resolution: {integrity: sha512-edQAz1lny8vmZtojpfsx2ebsS2yW5cNsJ9femFqUV1mKNrLgFWJaUWiIvxZrZsCs7JGJEzNfVsMembLdbcn8Og==}
+    engines: {node: '>=12.6'}
     requiresBuild: true
     peerDependencies:
       prisma: '*'
@@ -6530,7 +6530,7 @@ packages:
       prisma:
         optional: true
     dependencies:
-      '@prisma/engines-version': 4.2.0-33.2920a97877e12e055c1333079b8d19cee7f33826
+      '@prisma/engines-version': 3.11.0-2.c549d63a33078062a5e6bc2336f000946f8de389
       prisma: 4.2.1
 
   /@prisma/debug/4.10.1:
@@ -6573,8 +6573,8 @@ packages:
       - supports-color
     dev: false
 
-  /@prisma/engines-version/4.2.0-33.2920a97877e12e055c1333079b8d19cee7f33826:
-    resolution: {integrity: sha512-tktkqdiwqE4QhmE088boPt+FwPj1Jub/zk+5F6sEfcRHzO5yz9jyMD5HFVtiwxZPLx/8Xg9ElnuTi8E5lWVQFQ==}
+  /@prisma/engines-version/3.11.0-2.c549d63a33078062a5e6bc2336f000946f8de389:
+    resolution: {integrity: sha512-PWA48p87L3ZOoax357B4qRAvXwA/xmiVcWtqCvHDymUDPrqR1dRoM6cUShaQW8xgPevtTee8XAO1xOsJq8XdJw==}
 
   /@prisma/engines/4.2.1:
     resolution: {integrity: sha512-0KqBwREUOjBiHwITsQzw2DWfLHjntvbqzGRawj4sBMnIiL5CXwyDUKeHOwXzKMtNr1rEjxEsypM14g0CzLRK3g==}
@@ -10048,7 +10048,7 @@ packages:
   /axios/0.24.0:
     resolution: {integrity: sha512-Q6cWsys88HoPgAaFAVUb0WpPk0O8iTeisR9IMqy9G8AbO4NlpVknrnQS03zzF9PGAWgO3cgletO3VjV/P7VztA==}
     dependencies:
-      follow-redirects: 1.15.2_debug@4.3.4
+      follow-redirects: 1.15.2
     transitivePeerDependencies:
       - debug
     dev: false
@@ -13794,6 +13794,16 @@ packages:
     dependencies:
       tslib: 1.14.1
     dev: true
+
+  /follow-redirects/1.15.2:
+    resolution: {integrity: sha512-VQLG33o04KaQ8uYi2tVNbdrWp1QWxNNea+nmIB4EVM28v0hmP17z7aG1+wAkNzVq4KeXTq3221ye5qTJP91JwA==}
+    engines: {node: '>=4.0'}
+    peerDependencies:
+      debug: '*'
+    peerDependenciesMeta:
+      debug:
+        optional: true
+    dev: false
 
   /follow-redirects/1.15.2_debug@4.3.4:
     resolution: {integrity: sha512-VQLG33o04KaQ8uYi2tVNbdrWp1QWxNNea+nmIB4EVM28v0hmP17z7aG1+wAkNzVq4KeXTq3221ye5qTJP91JwA==}
